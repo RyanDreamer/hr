@@ -9,35 +9,58 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  
-  <!-- 下面是servlet的配置，与直接在Servlet.java里的配置信息二选一 -->
   <servlet>
-  	<!-- 描述 -->
-  	<description></description>
-  	<!-- 显示名称 -->
-  	<display-name></display-name>
-  	<!-- 自己起的servlet名称 -->
-  	<servlet-name>testServlet</servlet-name>
-  	<!-- servlet的全类名 -->
-  	<servlet-class>com.hr.servlet.TestServlet</servlet-class>
-  	<!-- 初始化参数 -->
-  	<init-param>
-  		<param-name>ecoding</param-name>
-  		<param-value>utf-8</param-value>
-  	</init-param>
-  	
+    <description></description>
+    <display-name></display-name>
+    <servlet-name>testServlet</servlet-name>
+    <servlet-class>com.hr.servlet.TestServlet</servlet-class>
+    <init-param>
+      <param-name>ecoding</param-name>
+      <param-value>utf-8</param-value>
+    </init-param>
   </servlet>
-  
-  <!-- 映射 -->
   <servlet-mapping>
-  	<!-- 引用自己起的servlet名称 -->
-  	<servlet-name>testServlet</servlet-name>
-  	<!-- 映射路径 -->
-  	<url-pattern>/testServlet</url-pattern>
+    <servlet-name>testServlet</servlet-name>
+    <url-pattern>/testServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>demo</servlet-name>
+    <servlet-class>com.hr.servlet.Servlet1</servlet-class>
+    <init-param>
+      <param-name>ecoding</param-name>
+      <param-value>utf-8</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>demo</servlet-name>
+    <url-pattern>/demo</url-pattern>
   </servlet-mapping>
   
-  <!-- servlet的配置到此结束 -->
   
+  <servlet>
+    <servlet-name>servletfrom</servlet-name>
+    <servlet-class>com.hr.servlet.TestServletFrom</servlet-class>
+    <init-param>
+      <param-name>ecoding</param-name>
+      <param-value>utf-8</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servletfrom</servlet-name>
+    <url-pattern>/servletfrom</url-pattern>
+  </servlet-mapping>
   
+  <servlet>
+    <servlet-name>servletto</servlet-name>
+    <servlet-class>com.hr.servlet.TestServletTo</servlet-class>
+    <init-param>
+      <param-name>ecoding</param-name>
+      <param-value>utf-8</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servletto</servlet-name>
+    <url-pattern>/servletto</url-pattern>
+  </servlet-mapping>
   
 </web-app>
