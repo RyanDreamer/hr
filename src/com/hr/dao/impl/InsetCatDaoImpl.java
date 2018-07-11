@@ -13,7 +13,7 @@ public class InsetCatDaoImpl implements IInsertCatDao {
 		
 		BaseDao baseDao = new BaseDao();
 		int result=0;
-		String sql = "insert into cms_category values(?,?,?,?)";
+		String sql = "insert into cms_category(pid,name,sort) values(?,?,?)";
 		
 		result = baseDao.executeUpdate(sql, params);
 		System.out.println("成功执行插入操作，"+result+"行受影响");

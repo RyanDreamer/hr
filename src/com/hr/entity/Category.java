@@ -24,6 +24,26 @@ public class Category implements Serializable{
 		this.name = name;
 		this.sort = sort;
 	}
+	
+	
+	/**
+	 * @param pid
+	 * @param name
+	 * @param sort
+	 */
+	public Category(Integer pid, String name, Integer sort) {
+		super();
+		this.pid = pid;
+		this.name = name;
+		this.sort = sort;
+	}
+
+
+	/**
+	 * 
+	 */
+	public Category() {
+	}
 	/**
 	 * @return the id
 	 */

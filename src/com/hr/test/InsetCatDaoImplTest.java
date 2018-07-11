@@ -19,9 +19,9 @@ public class InsetCatDaoImplTest {
 		Category cat;
 		IInsertCatDao insert = new InsetCatDaoImpl();
 		
-		cat = new Category(7,1,"科技",2);
+		cat = new Category(1,"科技",2);
 		params.add(cat);
-		cat = new Category(8,2,"文学",1);
+		cat = new Category(2,"文学",1);
 		params.add(cat);
 		insert.insertCat(params);
 		
